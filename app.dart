@@ -1,4 +1,3 @@
-import '../others/common.dart';
 import 'imports.dart';
 
 class DashboardApp extends StatelessWidget {
@@ -58,7 +57,6 @@ class DashboardApp extends StatelessWidget {
             );
           case AppRoute.Home:
             if (PlatformExt.isMobile) getInAppPurchases();
-            init();
             return HomePage();
           case AppRoute.Settings:
             return WillPopScope(

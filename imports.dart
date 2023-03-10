@@ -8,12 +8,16 @@ export 'package:flutter/gestures.dart';
 
 export 'package:clipboard/clipboard.dart';
 export 'package:flutter_background_service/flutter_background_service.dart';
+export 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+export 'package:flutter_inappwebview/flutter_inappwebview.dart'
+    hide X509Certificate, Cookie;
 export 'package:restart_app/restart_app.dart';
 export 'package:get/get.dart' hide HeaderValue, Progress;
 export 'package:google_fonts/google_fonts.dart';
 export 'package:in_app_review/in_app_review.dart';
 export 'package:url_launcher/url_launcher.dart';
 export 'package:outline_material_icons/outline_material_icons.dart';
+export 'package:purchases_flutter/purchases_flutter.dart';
 export 'package:share/share.dart';
 export 'package:time_ago_provider/time_ago_provider.dart';
 export 'package:zeronet_ws/zeronet_ws.dart';

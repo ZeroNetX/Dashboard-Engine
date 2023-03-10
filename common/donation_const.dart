@@ -1,5 +1,3 @@
-import 'package:purchases_flutter/purchases_flutter.dart';
-
 import '../imports.dart';
 
 bool? enableExternalDonations = false;
