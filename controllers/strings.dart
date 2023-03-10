@@ -4,12 +4,6 @@ class StrController extends GetxController {
   final statusStr = 'Status'.obs;
   final userStatusStr = 'User Id'.obs;
   final userNameNotCreatedStr = 'Not Created'.obs;
-  final statusNotRunningStr = 'Not Running'.obs;
-  final statusInitializingStr = 'Initializing..'.obs;
-  final statusStartingStr = 'Starting'.obs;
-  final statusRunningStr = 'Running'.obs;
-  final statusRunningWithTorStr = 'Running with Tor'.obs;
-  final statusErrorStr = 'Error'.obs;
   final popularSitesStr = 'Popular Sites'.obs;
   final startZeroNetFirstStr =
       'Please Start ZeroNet First to Browse this Zite'.obs;
@@ -22,24 +16,12 @@ class StrController extends GetxController {
   final resumeStr = 'Resume'.obs;
   final deleteZiteStr = 'Delete Zite'.obs;
   final shrtAddedToHomeScreenStr = 'shortcut added to HomeScreen'.obs;
-  final startStr = 'Start'.obs;
   final restartStr = 'Restart'.obs;
-  final pleaseWaitStr = 'Please Wait..!'.obs;
-  final stopStr = 'Stop'.obs;
   final closeStr = 'Close'.obs;
-  final viewLogStr = 'View Log'.obs;
   final aboutStr = 'About'.obs;
   final settingsStr = 'Settings'.obs;
   final browserStr = 'Browser'.obs;
   final logStr = 'Log'.obs;
-  final updateStr = 'Update'.obs;
-  final downloadingStr = 'Downloading'.obs;
-  final downloadedStr = 'Downloaded'.obs;
-  final installStr = 'Install'.obs;
-  final restoreStr = 'Restore'.obs;
-  final installingStr = 'Installing'.obs;
-  final installationCompletedStr = 'Installation Completed'.obs;
-  final notAvaliableStr = 'Not Available'.obs;
   final aboutAppDesStr = 'ZeroNet Mobile is a full native client for ZeroNet, '
           'a platform for decentralized websites using Bitcoin '
       .obs;
@@ -85,16 +67,10 @@ class StrController extends GetxController {
   final switchProfileToDesStr = 'this will delete the existing profile, '
           'backup existing profile using backup button below'
       .obs;
+  final installStr = 'Install'.obs;
+  final restoreStr = 'Restore'.obs;
   final backupStr = 'Backup'.obs;
   final switchStr = 'Switch'.obs;
-  final loadingPageWarningStr = """
-    Please Wait! This may take a while, happens 
-    only first time, Don't Press Back button.
-    If You Accidentally Pressed Back,
-    Clean App Storage in Settings or 
-    Uninstall and Reinstall The App.
-    """
-      .obs;
   final appUpdateAvailableStr = 'App Update Available : '.obs;
   final knowMoreStr = 'Know More'.obs;
   final ratingWgtStr = 'Give Your Rating/Feedback'.obs;
@@ -113,9 +89,7 @@ class StrController extends GetxController {
       'username already exists, choose different one.'.obs;
   final znNotiRunningTitleStr = 'ZeroNet Mobile is Running'.obs;
   final znNotiRunningDesStr = 'Click Here on this Notification to open app'.obs;
-  final znNotiNotRunningTitleStr = 'ZeroNet Mobile is Not Running'.obs;
-  final znNotiNotRunningDesStr =
-      'Open ZeroNet Mobile App and click start to run ZeroNet'.obs;
+
   final znPluginInstallingTitleStr = 'Installing Plugin'.obs;
   final znPluginInstallingDesStr =
       'This Dialog will be automatically closed after installation, '
@@ -241,6 +215,9 @@ class StrController extends GetxController {
   final proFeatureDesStr =
       "This Feature is available to Donors, You can activate this with a small donation, visit About Page to Donate."
           .obs;
+  final znNotiNotRunningTitleStr = 'ZeroNet Mobile is Not Running'.obs;
+  final znNotiNotRunningDesStr =
+      'Open ZeroNet Mobile App and click start to run ZeroNet'.obs;
 
   void updatestatusStr(String str) => statusStr.value = str;
   void updateUserStatusStr(String str) => userStatusStr.value = str;
@@ -248,14 +225,6 @@ class StrController extends GetxController {
       userNameNotCreatedStr.value = str;
   void updateCreateUserIdFirstStr(String str) =>
       createUserIdFirstStr.value = str;
-  void updatestatusNotRunningStr(String str) => statusNotRunningStr.value = str;
-  void updatestatusInitializingStr(String str) =>
-      statusInitializingStr.value = str;
-  void updatestatusStartingStr(String str) => statusStartingStr.value = str;
-  void updatestatusRunningStr(String str) => statusRunningStr.value = str;
-  void updatestatusRunningWithTorStr(String str) =>
-      statusRunningStr.value = str;
-  void updatestatusErrorStr(String str) => statusErrorStr.value = str;
   void updatepopularSitesStr(String str) => popularSitesStr.value = str;
   void updatestartZeroNetFirstStr(String str) =>
       startZeroNetFirstStr.value = str;
@@ -269,27 +238,16 @@ class StrController extends GetxController {
   void updatedeleteZiteStr(String str) => deleteZiteStr.value = str;
   void updateshrtAddedToHomeScreenStr(String str) =>
       shrtAddedToHomeScreenStr.value = str;
-  void updatestartStr(String str) => startStr.value = str;
   void updaterestartStr(String str) => restartStr.value = str;
-  void updatepleaseWaitStr(String str) => pleaseWaitStr.value = str;
-  void updatestopStr(String str) => stopStr.value = str;
   void updatecloseStr(String str) => closeStr.value = str;
-  void updateviewLogStr(String str) => viewLogStr.value = str;
   void updateaboutStr(String str) => aboutStr.value = str;
   void updatesettingsStr(String str) => settingsStr.value = str;
   void updatebrowserStr(String str) => browserStr.value = str;
   void updatelogStr(String str) => logStr.value = str;
-  void updateupdateStr(String str) => updateStr.value = str;
-  void updatedownloadingStr(String str) => downloadingStr.value = str;
-  void updatedownloadedStr(String str) => downloadedStr.value = str;
-  void updateinstallStr(String str) => installStr.value = str;
-  void updaterestoreStr(String str) => restoreStr.value = str;
-  void updateinstallingStr(String str) => installingStr.value = str;
-  void updateinstallationCompletedStr(String str) =>
-      installationCompletedStr.value = str;
-  void updatenotAvaliableStr(String str) => notAvaliableStr.value = str;
   void updateaboutAppDesStr(String str) => aboutAppDesStr.value = str;
   void updateaboutAppDes1Str(String str) => aboutAppDes1Str.value = str;
+  void updateinstallStr(String str) => installStr.value = str;
+  void updaterestoreStr(String str) => restoreStr.value = str;
   void updatedevelopersStr(String str) => developersStr.value = str;
   void updatedonationAddrsStr(String str) => donationAddrsStr.value = str;
   void updateclickAddrToCopyStr(String str) => clickAddrToCopyStr.value = str;
@@ -310,14 +268,11 @@ class StrController extends GetxController {
       zeroNetNotInitTitleStr.value = str;
   void updatezeroNetNotInitDesStr(String str) =>
       zeroNetNotInitDesStr.value = str;
-  void updateloadingStr(String str) => loadingStr.value = str;
   void updateswitchProfileToStr(String str) => switchProfileToStr.value = str;
   void updateswitchProfileToDesStr(String str) =>
       switchProfileToDesStr.value = str;
   void updatebackupStr(String str) => backupStr.value = str;
   void updateswitchStr(String str) => switchStr.value = str;
-  void updateloadingPageWarningStr(String str) =>
-      loadingPageWarningStr.value = str;
   void updateappUpdateAvailableStr(String str) =>
       appUpdateAvailableStr.value = str;
   void updateknowMoreStr(String str) => knowMoreStr.value = str;
@@ -337,6 +292,7 @@ class StrController extends GetxController {
       znNotiNotRunningTitleStr.value = str;
   void updateznNotiNotRunningDesStr(String str) =>
       znNotiNotRunningDesStr.value = str;
+
   void updateznPluginInstallingTitleStr(String str) =>
       znPluginInstallingTitleStr.value = str;
   void updateznPluginInstallingDesStr(String str) =>
@@ -435,12 +391,6 @@ class StrController extends GetxController {
     updateUserStatusStr(map['userStatusStr']);
     updateUserNameNotCreatedStr(map['userNameNotCreatedStr']);
     updateCreateUserIdFirstStr(map['createUserIdFirstStr']);
-    updatestatusNotRunningStr(map['statusNotRunningStr']);
-    updatestatusInitializingStr(map['statusInitializingStr']);
-    updatestatusStartingStr(map['statusStartingStr']);
-    updatestatusRunningStr(map['statusRunningStr']);
-    updatestatusRunningWithTorStr(map['statusRunningWithTorStr']);
-    updatestatusErrorStr(map['statusErrorStr']);
     updatepopularSitesStr(map['popularSitesStr']);
     updatestartZeroNetFirstStr(map['startZeroNetFirstStr']);
     updatecreateStr(map['createStr']);
@@ -452,24 +402,14 @@ class StrController extends GetxController {
     updateresumeStr(map['resumeStr']);
     updatedeleteZiteStr(map['deleteZiteStr']);
     updateshrtAddedToHomeScreenStr(map['shrtAddedToHomeScreenStr']);
-    updatestartStr(map['startStr']);
     updaterestartStr(map['restartStr']);
-    updatepleaseWaitStr(map['pleaseWaitStr']);
-    updatestopStr(map['stopStr']);
     updatecloseStr(map['closeStr']);
-    updateviewLogStr(map['viewLogStr']);
     updateaboutStr(map['aboutStr']);
     updatesettingsStr(map['settingsStr']);
     updatebrowserStr(map['browserStr']);
     updatelogStr(map['logStr']);
-    updateupdateStr(map['updateStr']);
-    updatedownloadingStr(map['downloadingStr']);
-    updatedownloadedStr(map['downloadedStr']);
     updateinstallStr(map['installStr']);
     updaterestoreStr(map['restoreStr']);
-    updateinstallingStr(map['installingStr']);
-    updateinstallationCompletedStr(map['installationCompletedStr']);
-    updatenotAvaliableStr(map['notAvaliableStr']);
     updateaboutAppDesStr(map['aboutAppDesStr']);
     updateaboutAppDes1Str(map['aboutAppDes1Str']);
     updatedevelopersStr(map['developersStr']);
@@ -490,12 +430,10 @@ class StrController extends GetxController {
     updatechkBckUpStr(map['chkBckUpStr']);
     updatezeroNetNotInitTitleStr(map['zeroNetNotInitTitleStr']);
     updatezeroNetNotInitDesStr(map['zeroNetNotInitDesStr']);
-    updateloadingStr(map['loadingStr']);
     updateswitchProfileToStr(map['switchProfileToStr']);
     updateswitchProfileToDesStr(map['switchProfileToDesStr']);
     updatebackupStr(map['backupStr']);
     updateswitchStr(map['switchStr']);
-    updateloadingPageWarningStr(map['loadingPageWarningStr']);
     updateappUpdateAvailableStr(map['appUpdateAvailableStr']);
     updateknowMoreStr(map['knowMoreStr']);
     updateratingWgtStr(map['ratingWgtStr']);
@@ -509,8 +447,6 @@ class StrController extends GetxController {
     updateusrnameWarning4Str(map['usrnameWarning4Str']);
     updateznNotiRunningTitleStr(map['znNotiRunningTitleStr']);
     updateznNotiRunningDesStr(map['znNotiRunningDesStr']);
-    updateznNotiNotRunningTitleStr(map['znNotiNotRunningTitleStr']);
-    updateznNotiNotRunningDesStr(map['znNotiNotRunningDesStr']);
     updateznPluginInstallingTitleStr(map['znPluginInstallingTitleStr']);
     updateznPluginInstallingDesStr(map['znPluginInstallingDesStr']);
     updatezninstallAPluginTitleStr(map['zninstallAPluginTitleStr']);
@@ -566,5 +502,7 @@ class StrController extends GetxController {
     updateenableInternetAccessDesStr(map['enableInternetAccessDesStr']);
     updateproFeatureTitleStr(map['proFeatureTitleStr']);
     updateproFeatureDesStr(map['proFeatureDesStr']);
+    updateznNotiNotRunningTitleStr(map['znNotiNotRunningTitleStr']);
+    updateznNotiNotRunningDesStr(map['znNotiNotRunningDesStr']);
   }
 }
