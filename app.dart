@@ -1,3 +1,5 @@
+import 'package:zeronet/imports.dart';
+
 import 'imports.dart';
 
 class DashboardApp extends StatelessWidget {
@@ -45,9 +47,9 @@ class DashboardApp extends StatelessWidget {
                 if (fromBrowser) {
                   fromBrowser = false;
                   //TODO! Replace with Updated WebView
-                  flutterWebViewPlugin.canGoBack().then(
-                        (value) => value ? flutterWebViewPlugin.goBack() : null,
-                      );
+                  // flutterWebViewPlugin.canGoBack().then(
+                  //       (value) => value ? flutterWebViewPlugin.goBack() : null,
+                  //     );
                   siteUiController.updateCurrentAppRoute(AppRoute.ZeroBrowser);
                 } else
                   siteUiController.updateCurrentAppRoute(AppRoute.Home);

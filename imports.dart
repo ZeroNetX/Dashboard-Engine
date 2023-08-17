@@ -8,7 +8,7 @@ export 'package:flutter/gestures.dart';
 
 export 'package:clipboard/clipboard.dart';
 export 'package:flutter_background_service/flutter_background_service.dart';
-export 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+// export 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 export 'package:flutter_inappwebview/flutter_inappwebview.dart'
     hide X509Certificate, Cookie;
 export 'package:restart_app/restart_app.dart';
