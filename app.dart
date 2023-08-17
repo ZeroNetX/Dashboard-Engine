@@ -56,7 +56,7 @@ class DashboardApp extends StatelessWidget {
               child: AboutPage(),
             );
           case AppRoute.Home:
-            if (PlatformExt.isMobile) getInAppPurchases();
+            if (PlatformExt.isMobile && kReleaseMode) getInAppPurchases();
             return HomePage();
           case AppRoute.Settings:
             return WillPopScope(

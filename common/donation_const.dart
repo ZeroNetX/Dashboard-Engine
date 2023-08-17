@@ -60,10 +60,10 @@ Future getInAppPurchases() async {
 Future<bool> isProUser() async {
   try {
     final userName = getZeroIdUserName();
-    PurchaserInfo purchaserInfo;
+    CustomerInfo purchaserInfo;
     if (userName.isNotEmpty) {
-      purchaserInfo = (await Purchases.logIn(userName)).purchaserInfo;
-      purchaserInfo = await Purchases.getPurchaserInfo();
+      purchaserInfo = (await Purchases.logIn(userName)).customerInfo;
+      purchaserInfo = await Purchases.getCustomerInfo();
       if (purchaserInfo.entitlements.active.length > 0) return true;
     } else
       return false;
@@ -77,10 +77,10 @@ Future<bool> isProUser() async {
 
 void purchasePackage(Package package) async {
   try {
-    PurchaserInfo purchaserInfo;
+    CustomerInfo purchaserInfo;
     final userName = getZeroIdUserName();
     if (userName.isNotEmpty)
-      purchaserInfo = (await Purchases.logIn(userName)).purchaserInfo;
+      purchaserInfo = (await Purchases.logIn(userName)).customerInfo;
     purchaserInfo = await Purchases.purchasePackage(package);
 
     kisProUser = await isProUser();

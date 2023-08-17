@@ -415,7 +415,7 @@ class GooglePlayInAppPurchases extends StatelessWidget {
                           bottom: 8.0,
                         ),
                         child: Text(
-                          "$label(${package.product.priceString})",
+                          "$label(${package.storeProduct.priceString})",
                           style: GoogleFonts.roboto(
                             fontSize: 16.0,
                             fontWeight: FontWeight.w500,
