@@ -117,8 +117,7 @@ class SiteItemWidget extends StatelessWidget {
                             var url = zeroNetUrl;
                             if (url.isEmpty) {
                               var isServiceRunning =
-                                  await FlutterBackgroundService()
-                                      .isServiceRunning();
+                                  await FlutterBackgroundService().isRunning();
                               if (isServiceRunning) {
                                 url = defZeroNetUrl;
                               }
