@@ -29,7 +29,8 @@ class SettingsPage extends StatelessWidget {
                         bool isUsersFileExists = isZeroNetUsersFileExists();
                         if (!isUsersFileExists) return Container();
                       } else if (current.name == enableZeroNetFilters &&
-                          firstTime) {
+                              firstTime ||
+                          current.name == enableAdditionalTrackers) {
                         return Container();
                       }
                       return SettingsCard(
