@@ -33,6 +33,7 @@ export 'controllers/controllers.dart';
 
 export 'models/enums.dart';
 export 'models/models.dart';
+export 'models/extensions.dart';
 
 export 'pages/pages.dart';
 export 'widgets/widgets.dart';
